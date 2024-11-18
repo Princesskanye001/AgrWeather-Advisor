@@ -58,4 +58,12 @@ def index():
                                 3)Tomatoes: Tomato plants thrive in warm soil and should be planted after the soil has reached 10-18°C.
                                 4)Herbs (e.g. parsley, cilantro)
                                 5)spring wheat"""
-                    weather_image = "static/download.jpg"    
+                    weather_image = "static/download.jpg"
+                elif 17 <= temp_celsius < 21:
+                    message ="""With the temperature of your city, here are plants you can sow:
+                                1)Herbs: e.g Some herbs like basil prefer warmer temperatures, around 18°C (64°F) or higher.
+                                2)Cucumbers: Cucumber seeds should be planted in warm soil, typically when temperatures are consistently above 18°C.
+                                3)Squash: Squash plants prefer warm soil and should be planted after the soil has warmed to at least 18°C.
+                                4)Melons: Melon seeds should be planted in warm soil, typically when temperatures are consistently above 18°C
+                                """
+                    weather_image = "static/download.jpg"        
