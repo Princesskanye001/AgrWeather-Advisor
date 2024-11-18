@@ -72,4 +72,22 @@ def index():
                                 1)Peppers
                                 2)Watermelons
                                 3)Okra"""
-                    weather_image = "static/Fairy World.jpg"            
+                    weather_image = "static/Fairy World.jpg"
+
+                else:
+                        message = """Its really hot in your city,remember even heat-tolerant plants will require adequatvwater to establish themselves during hot weather.
+                            These are the plants that can survive hot temperatures:
+
+                            1)Okra
+                            2)Eggplant
+                            3)Peppers (both sweet and hot)
+                            4)Tomatoes (if they receive adequate water)
+                            5) Herbs like  Basil, rosemary, thyme, oregano, and sage
+                            6)Tropical Fruits - If you're in a tropical or subtropical region,
+                                you might consider sowing tropical fruit plants such as mango, papaya, passion fruit, or pineapple.
+                            7)Flowers - Certain flowers are adapted to hot climates.
+                                Marigolds, zinnias, sunflowers, and portulaca are some options that can withstand high temperatures.
+                            8)Drought-Resistant Plants: Plants that are naturally adapted to arid climates or have deep root 
+                                systems to access water can also be sown in hot conditions. Examples include cacti, succulents, 
+                                and some varieties of ornamental grasses."""
+                        weather_image = "static/Fairy World.jpg"            
