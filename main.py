@@ -97,5 +97,6 @@ def index():
                                     humidity=humidity, description=description, sunrise_time=sunrise_time, sunset_time=sunset_time,message = message,weather_image=weather_image)
             else:
                 error_message = "Invalid city. Check your spelling and try again."    
-            return render_template("index.html", error_message = error_message)                        
+            return render_template("index.html", error_message = error_message)
+    return render_template("index.html", error_message=error_message)                                 
                                 
