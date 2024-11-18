@@ -90,4 +90,9 @@ def index():
                             8)Drought-Resistant Plants: Plants that are naturally adapted to arid climates or have deep root 
                                 systems to access water can also be sown in hot conditions. Examples include cacti, succulents, 
                                 and some varieties of ornamental grasses."""
-                        weather_image = "static/Fairy World.jpg"            
+                        weather_image = "static/Fairy World.jpg"
+
+                return render_template("index.html", city=city, temp_celsius=temp_celsius, temp_fahrenheit=temp_fahrenheit,
+                                    feels_like_celsius=feels_like_celsius, feels_like_fahrenheit=feels_like_fahrenheit,
+                                    humidity=humidity, description=description, sunrise_time=sunrise_time, sunset_time=sunset_time,message = message,weather_image=weather_image)
+                                
