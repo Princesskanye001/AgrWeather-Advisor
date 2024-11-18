@@ -40,3 +40,14 @@ def index():
                                     2)Onions: Onions can tolerate cool soil temperatures and are often planted early in the spring.
                                     3)winter wheat"""
                     weather_image = "static/cloud(2).jpg"
+
+                elif 5 <= temp_celsius < 10:
+                    message = """With the temperature of your city, here are plants you can sow:
+                                1)Carrots: Carrots can be sown in cool soil and will germinate at temperatures as low as 5°C.
+                                2)Peas: Peas can be planted as soon as the soil reaches 5-10°C for an early spring crop.
+                                3)Lettuce: Lettuce seeds can be sown directly into cool soil for early spring harvests.
+                                4)spinach
+                                5)beets
+                                6)radishes
+                                7)turnips"""
+                    weather_image = "static/cloud(1).jpg"
