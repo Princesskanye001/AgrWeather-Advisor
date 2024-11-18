@@ -98,5 +98,10 @@ def index():
             else:
                 error_message = "Invalid city. Check your spelling and try again."    
             return render_template("index.html", error_message = error_message)
-    return render_template("index.html", error_message=error_message)                                 
+    return render_template("index.html", error_message=error_message) 
+if __name__ == "__main__":
+    app.run(debug=True)
+
+
+
                                 
