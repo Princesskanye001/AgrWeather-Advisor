@@ -95,4 +95,7 @@ def index():
                 return render_template("index.html", city=city, temp_celsius=temp_celsius, temp_fahrenheit=temp_fahrenheit,
                                     feels_like_celsius=feels_like_celsius, feels_like_fahrenheit=feels_like_fahrenheit,
                                     humidity=humidity, description=description, sunrise_time=sunrise_time, sunset_time=sunset_time,message = message,weather_image=weather_image)
+            else:
+                error_message = "Invalid city. Check your spelling and try again."    
+            return render_template("index.html", error_message = error_message)                        
                                 
