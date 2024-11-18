@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('images', filename='styles.css') }}">
 </head>
 <body>
-    <img src="static/world_map.webp" alt="World Map" class="background-image">
+    <img src="images/world_map.webp" alt="World Map" class="background-image">
     <div class="container" style="background-image: url({{weather_image}});">
         <h1>Weather App</h1>
         <form method="post">
@@ -29,7 +29,7 @@
             <p>Sunset: {{ sunset_time }}</p>
             <p>{{ message }}</p>
             {% if weather_image %}
-            <img src="{{ url_for('static', filename=weather_image) }}"class ="weather_image">
+            <img src="{{ url_for('images', filename=weather_image) }}"class ="weather_image">
             {% endif %}
         </div>
     </div>

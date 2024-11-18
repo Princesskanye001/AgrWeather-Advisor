@@ -39,7 +39,7 @@ def index():
                                     overwintering or early spring for spring harvest.
                                     2)Onions: Onions can tolerate cool soil temperatures and are often planted early in the spring.
                                     3)winter wheat"""
-                    weather_image = "static/cloud(2).jpg"
+                    weather_image = "images/cloud(2).jpg"
 
                 elif 5 <= temp_celsius < 10:
                     message = """With the temperature of your city, here are plants you can sow:
@@ -50,7 +50,7 @@ def index():
                                 5)beets
                                 6)radishes
                                 7)turnips"""
-                    weather_image = "static/cloud(1).jpg"
+                    weather_image = "images/cloud(1).jpg"
                 elif 10 <= temp_celsius < 17:
                     message="""With the temperature of your city, here are plants you can sow:
                                 1)Beans: Beans prefer warmer soil temperatures and should be planted when the soil has warmed to at least 10°C.
@@ -58,7 +58,7 @@ def index():
                                 3)Tomatoes: Tomato plants thrive in warm soil and should be planted after the soil has reached 10-18°C.
                                 4)Herbs (e.g. parsley, cilantro)
                                 5)spring wheat"""
-                    weather_image = "static/download.jpg"
+                    weather_image = "images/download.jpg"
                 elif 17 <= temp_celsius < 21:
                     message ="""With the temperature of your city, here are plants you can sow:
                                 1)Herbs: e.g Some herbs like basil prefer warmer temperatures, around 18°C (64°F) or higher.
@@ -66,13 +66,13 @@ def index():
                                 3)Squash: Squash plants prefer warm soil and should be planted after the soil has warmed to at least 18°C.
                                 4)Melons: Melon seeds should be planted in warm soil, typically when temperatures are consistently above 18°C
                                 """
-                    weather_image = "static/download.jpg"
+                    weather_image = "images/download.jpg"
                 elif temp_celsius >= 21 and temp_celsius < 32:
                     message= """With the temperature of your city, here are plants you can sow:
                                 1)Peppers
                                 2)Watermelons
                                 3)Okra"""
-                    weather_image = "static/Fairy World.jpg"
+                    weather_image = "images/Fairy World.jpg"
 
                 else:
                         message = """Its really hot in your city,remember even heat-tolerant plants will require adequatvwater to establish themselves during hot weather.
@@ -90,7 +90,7 @@ def index():
                             8)Drought-Resistant Plants: Plants that are naturally adapted to arid climates or have deep root 
                                 systems to access water can also be sown in hot conditions. Examples include cacti, succulents, 
                                 and some varieties of ornamental grasses."""
-                        weather_image = "static/Fairy World.jpg"
+                        weather_image = "images/Fairy World.jpg"
 
                 return render_template("index.html", city=city, temp_celsius=temp_celsius, temp_fahrenheit=temp_fahrenheit,
                                     feels_like_celsius=feels_like_celsius, feels_like_fahrenheit=feels_like_fahrenheit,
