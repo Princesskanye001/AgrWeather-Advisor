@@ -32,3 +32,11 @@ def index():
                 description = data['weather'][0]['description']
                 sunrise_time = dt.datetime.utcfromtimestamp(data['sys']['sunrise'] + data['timezone'])
                 sunset_time = dt.datetime.utcfromtimestamp(data['sys']['sunset'] + data['timezone'])
+
+                if temp_celsius < 5:
+                    message = """With the temperature of your city, here are the plants you can sow: 
+                                    1)Garlic: Garlic cloves can be planted in cool soil in late fall for
+                                    overwintering or early spring for spring harvest.
+                                    2)Onions: Onions can tolerate cool soil temperatures and are often planted early in the spring.
+                                    3)winter wheat"""
+                    weather_image = "static/cloud(2).jpg"
