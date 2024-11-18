@@ -51,3 +51,11 @@ def index():
                                 6)radishes
                                 7)turnips"""
                     weather_image = "static/cloud(1).jpg"
+                elif 10 <= temp_celsius < 17:
+                    message="""With the temperature of your city, here are plants you can sow:
+                                1)Beans: Beans prefer warmer soil temperatures and should be planted when the soil has warmed to at least 10°C.
+                                2)Corn: Corn seeds should be planted in soil that has warmed to at least 10°C for optimal germination.
+                                3)Tomatoes: Tomato plants thrive in warm soil and should be planted after the soil has reached 10-18°C.
+                                4)Herbs (e.g. parsley, cilantro)
+                                5)spring wheat"""
+                    weather_image = "static/download.jpg"    
